@@ -146,7 +146,11 @@ module.exports = LANGUAGES =
   JavaScript:
     nameMatchers:      ['.js']
     pygmentsLexer:     'javascript'
-    multiLineComment:  ['/*', '*', '*/']
+    multiLineComment:  [
+      '/*', '*', '*/',
+      # } YUIDoc syntax
+      '/**', '*', '*/'
+    ]
     singleLineComment: ['//']
     ignorePrefix:      '}'
     foldPrefix:        '^'
